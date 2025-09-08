@@ -1,0 +1,12 @@
+import model g2HDM_UFO
+
+define p = p b b~
+define j = p
+generate p p > h+ QCD=99, (h+ > t b~, (t > w+ b , W+ > l+ vl))
+add process p p > h+ j QCD=99, (h+ > t b~, (t > w+ b , W+ > l+ vl))
+add process p p > h+ j j QCD=99, (h+ > t b~, (t > w+ b , W+ > l+ vl))
+add process p p > h- QCD=99, (h- > t~ b, (t~ > w- b~, W- > l- vl~))
+add process p p > h- j QCD=99, (h- > t~ b, (t~ > w- b~, W- > l- vl~))
+add process p p > h- j j  QCD=99, (h- > t~ b, (t~ > w- b~, W- > l- vl~))
+
+output g2HDM_300_0.1_0.1 -nojpeg
